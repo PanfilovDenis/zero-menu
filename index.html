@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<style>
+  ul {
+      list-style-type: none;
+      margin:0;
+      padding: 0;
+      border-bottom: 1px solid gray;
+      width: 202px;
+  }
+
+  ul > li {
+      padding: 0 10px;
+      position: relative;
+      width: 180px;
+      height: 20px;
+      border: 1px solid gray;
+      border-bottom: none;
+  }
+  ul > li > ul {
+      display: none;
+      position: absolute;
+      left: 200px;
+      top: -1px;
+  }
+  ul > li:hover > ul {
+      display: block;
+  }
+</style>
+<ul>
+  <li>
+    <a href="#">First</a>
+    <ul>
+      <li><a href="#">First</a></li>
+      <li><a href="#">Second</a></li>
+      <li><a href="#">Third</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">Second</a>
+    <ul>
+      <li><a href="#">First</a></li>
+      <li><a href="#">Second</a></li>
+      <li><a href="#">Third</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">Third</a>
+    <ul>
+      <li><a href="#">First</a></li>
+      <li><a href="#">Second</a></li>
+      <li><a href="#">Third</a></li>
+    </ul>
+  </li>
+</ul>
